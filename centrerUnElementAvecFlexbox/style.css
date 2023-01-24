@@ -1,0 +1,32 @@
+/* RESET GLOBAL CSS : */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* Mise en forme du body (facultatif) : */
+    background-color: lightgoldenrodyellow;
+
+     /* Il faut préciser la taille de l'élément parent de la div pour 
+     que la div puisse se positionner par rapport à cette taille.
+      On fixe la hauteur du body à 100% de la hauteur de l'écran 
+      (100vh = 100% de la viewheight) : */
+     height: 100vh;
+
+     /* Mise en forme avec flexbox : pour centrer les éléments enfants
+      de body, body doit être un élément flex : */
+      display: flex;
+
+       /* Aligner les élément enfants de body (la div ici) selon l'axe
+        horizontal : */
+        justify-content:center ;
+        align-items: center;  
+}
+.texte-central{
+    /* Mise en forme de la div (facultatif) : */
+    font-family: sans-serif;
+    font-weight: bold;
+}
